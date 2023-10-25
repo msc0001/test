@@ -1,5 +1,7 @@
+import data from '../Data/files.json';
+
 export default async function  getFileNamesList() {
     return new Promise((resolve, reject) => {
-        setTimeout(() => resolve(), 5000);
+        setTimeout(() => resolve(data), 0);
     }) 
 }

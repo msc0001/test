@@ -1,0 +1,44 @@
+.directories {
+    padding-left: 0px;
+    margin: 0 0;
+}
+
+.directory {
+    padding-top: 8px;
+    padding-left: 15px;
+    list-style: none;
+    padding-bottom: 0;
+}
+
+.directory.main {
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.directory-btn {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    padding: 0;
+}
+.file {
+    padding-left: 24px;
+}
+
+.directory-btn > .opened {
+    transform: rotate(-90deg);
+}
+
+.dict-title {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.dict-title > svg {
+    height: 16px !important;
+    width: 16px !important;
+}
+

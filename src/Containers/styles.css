@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: left;
+    font-size: 16px;
+}
+
+.container > header, .container > footer {
+    flex: 0;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.container > header {
+    border-bottom-width: 1px;
+}
+.container > footer {
+    border-top-width: 1px;
+}
+
+.container > main {
+    flex: 1;
+    overflow: auto;
+}
+
+.main-container {
+    display: flex;
+}

@@ -1,15 +1,16 @@
+import './styles.css';
 import FileContent from "../Components/FileContent";
 import FileManager from "../Components/FileManager";
 
 function Main() {
     return (
         <div className="container">
-            <header>File Explorer</header>
+            <header className='border'>File Explorer</header>
             <main className="main-container">
                 <FileManager />
                 <FileContent />
             </main>
-            <footer>footer content/options</footer>
+            <footer className='border'>footer content/options</footer>
         </div>
     )
 }
