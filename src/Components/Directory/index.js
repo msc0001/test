@@ -26,7 +26,7 @@ export default function Directory({ id, details, directory }) {
                         </button>
                     ) : null}
                     {Array.isArray(children) && isExpanded
-                        ? <ul className="directories">{children.map(childrenId => (
+                        ? <ul className={`directories ${isExpanded ? "expanded" : ""}`}>{children.map(childrenId => (
                             <Directory key={childrenId} id={childrenId} details={details} />
                         ))}</ul>
                         : null
