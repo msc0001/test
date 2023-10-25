@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import React, { lazy } from 'react';
 import './App.css';
+import LazyComponentHandler from './Common/Components/LazyWrapper';
+
+const LazyMain = lazy(() => import('./Containers/Main'));
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Can be added as lazy component, it will also allow us to add route based lazy Loading */}
+      <LazyComponentHandler lazyComponent={LazyMain} />
     </div>
   );
 }
